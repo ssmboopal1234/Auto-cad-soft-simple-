@@ -1,0 +1,6 @@
+import keras
+#set number of categories
+num_category = 10
+# convert class vectors to binary class matrices
+y_train = keras.utils.to_categorical(y_train, num_category)
+y_test = keras.utils.to_categorical(y_test, num_category)
